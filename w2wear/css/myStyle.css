@@ -1,0 +1,207 @@
+:root {
+    --ltPurple: #DDDCFF;
+    --dkPurple: #B8B7D9; 
+  }
+body { 
+    padding-bottom: 80px; 
+    min-width: 576px;
+
+}
+ul{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+li{
+    margin: 0;
+    list-style : none !important;
+}
+
+.my-links{
+    color:var(--dkPurple) !important;
+}
+.my-links:hover{
+    text-decoration: var(--ltPurple) !important;
+}
+
+.set-background-to-ltpurple{
+    background-color:var(--ltPurple)!important;
+    /* width: 100%; */
+}
+.set-background-to-DKpurple{
+    background-color:var(--dkPurple)!important;
+    /* width: 100%; */
+}
+
+
+.change-background-lt:hover{
+    background-color: lavender !important;
+}
+
+.weatherImage {
+    /* bottom: 15%; */
+    position: relative;
+    -webkit-animation: linear infinite;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 3s;
+  }
+  @-webkit-keyframes run {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: -10%;
+    }
+    100% {
+      left: 0;    
+    }
+  }
+
+section button:hover{
+    background-color: white!important;
+}
+a:hover{
+    color: rgb(25, 117, 192) !important;
+}
+label{
+    margin-left: 10px;
+}
+input[type="radio"] {
+    background-color: var(--dkPurple);
+    margin: 0;
+    color: var(--dkPurple);
+    border: 0.15em solid var(--dkPurple);
+  }
+
+input{
+    border: 0;
+    padding: 5%;
+    border-radius: 40px;
+}
+section input:hover{
+    
+    background-color: var(--ltPurple) !important;
+    color: white !important;
+}
+
+
+.set-color-to-purple-dk{
+    color: var(--dkPurple) !important;
+}
+
+.set-color-to-purple-lt{
+    color: var(--ltPurple) !important;
+}
+
+
+.rounded-input-location{
+    border-radius: 10%;
+
+}
+
+.remove-outline{
+    border-style: none !important;
+}
+
+.largerText{
+    font-size: 500% !important;
+}
+#invalidZip{
+    display: none;
+    color: rgb(255, 255, 255);
+    font-style: bold;
+}
+
+.text-background{
+    background-color: var(--dkPurple);
+    color: white;
+    border-radius: 10px;
+    width: wrap-content;
+}
+
+.custom-circle{
+    align-self: center;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+}
+
+.custom-flex-row{
+    font-size: medium !important;
+    display: flex;
+    flex-flow: row;
+    justify-content: left;
+}
+
+.ui-accordion-header {
+    background-color: var(--dkPurple) !important;
+
+}
+.ui-state-active{
+    color: white !important;
+}
+.ui-state-default{
+    border: none;
+    background: none !important;
+    background-color: var(--dkPurple) !important;
+    opacity: 50%;
+}
+
+.aboutUs-image{
+    height: 800px;
+    background-image: url("https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80");
+}
+
+.hot-or-cold-container{
+    overflow: scroll;
+}
+
+.get-recommendations-onclick{
+    background-color: var(--ltPurple);
+    color: var(--dkPurple);
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    box-shadow: 10px, 10px, 10px ;
+}
+
+.hover-dark-text:hover{
+    color: var(--dkPurple) !important;
+}
+.time{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color:var(--ltPurple);
+    font-family: "quicksand";
+}
+
+.date-time-frontpage{
+    text-align: right;
+}
+
+.individual-forecast-style{
+    width: 33%;
+}
+
+.individual-forecast-row-hover:hover{
+    background-color: white !important;
+}
+
+.light-text-dark-background{
+    color: white !important;
+}
+
+.light-text-dark-background:hover{
+    color: black !important;
+}
+
+.quicksand-font{
+    font-family: quicksand;
+    font-style: bold;
+    font-size: large;
+}
+.date-input{
+    color: var(--dkPurple) !important;
+    
+}

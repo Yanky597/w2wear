@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W2WEAR</title>
+
+    <link rel="stylesheet" href="./css/myStyle.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Jquery CSS -->
+    <link
+      rel="stylesheet"
+      href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css"
+    />
+    <!-- Vue CDN -->
+    <script src="https://unpkg.com/vue@3"></script>
+  </head>
+  <body>
+    <div id="app">
+      <mini-header></mini-header>
+      <main class="p-5 hot-or-cold-container">
+        <h1 class="text-center display-1 largerText">Hot or Cold?</h1>
+
+        <questions @set-body-temp="setUserTemp"></questions>
+      </main>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="myModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">W2WEAR</h5>
+            </div>
+            <div class="modal-body">
+              Get a more accurate outerwear recommendation by filling out the
+              following form
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-dark" id="close-dialog">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <page-footer></page-footer>
+    </div>
+
+    <!-- components / vue.js files -->
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/components/sideNavigation.js"></script>
+    <script src="./scripts/components/header.js"></script>
+    <script src="./scripts/components/miniHeader.js"></script>
+    <script src="./scripts/components/questions.js"></script>
+    <script src="./scripts/components/questionResults.js"></script>
+    <script src="./scripts/components/footer.js"></script>
+
+    <script>
+      const mountedApp = app.mount("#app");
+    </script>
+
+    <!-- Jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Jquery UI -->
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        // FIXME: im going to have to uncomment this.
+        $("#myModal").modal("show");
+        $("#close-dialog").click(function () {
+          $("#myModal").modal("hide");
+        });
+      });
+    </script>
+
+    <!-- bootstrap Javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
